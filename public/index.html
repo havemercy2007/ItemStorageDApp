@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Storage DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Item Storage DApp</h1>
+    <form id="addItemForm">
+        <input type="text" id="itemName" placeholder="Item Name" required>
+        <input type="text" id="itemPrice" placeholder="Price (in ETH)" required>
+        <input type="text" id="itemDescription" placeholder="Description" required>
+        <input type="number" id="itemQuantity" placeholder="Quantity" required>
+        <button type="submit">Add Item</button>
+    </form>
+
+    <form id="updateItemForm">
+        <input type="number" id="itemId" placeholder="Item ID" required>
+        <input type="text" id="itemNameUpdate" placeholder="New Item Name" required>
+        <input type="text" id="itemPriceUpdate" placeholder="New Price (in ETH)" required>
+        <input type="text" id="itemDescriptionUpdate" placeholder="New Description" required>
+        <input type="number" id="itemQuantityUpdate" placeholder="New Quantity" required>
+        <button type="submit">Update Item</button>
+    </form>
+</body>
+</html>
